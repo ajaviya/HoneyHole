@@ -1,0 +1,41 @@
+# =========================
+# Python
+# =========================
+backend/venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+
+# =========================
+# Environment variables
+# =========================
+.env
+.env.*
+
+# =========================
+# Node / Frontend
+# =========================
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.next/
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# OS / Editor junk
+# =========================
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# =========================
+# Database / local state
+# =========================
+*.sqlite3
