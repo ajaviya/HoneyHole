@@ -3,9 +3,8 @@ from sqlalchemy.orm import sessionmaker
 import os
 import logging
 from dotenv import load_dotenv
+
 load_dotenv()
-
-
 logger = logging.getLogger(__name__)
 
 DB_USER = os.getenv("DB_USER")

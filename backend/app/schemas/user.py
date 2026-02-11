@@ -9,7 +9,7 @@ class UserBase(BaseModel):
     last_name: str
 
 class UserCreate(UserBase):
-    password: str
+    pass
 
 class UserUpdate(BaseModel):
     username: str | None = None

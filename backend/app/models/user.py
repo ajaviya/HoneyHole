@@ -41,7 +41,7 @@ class User(Base):
 
     password_hash = Column(
         String,
-        nullable=False,
+        nullable=True,
     )
 
     created_at = Column(
