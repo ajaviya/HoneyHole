@@ -56,8 +56,11 @@ def update_user(user_id: UUID, user_in: UserUpdate, db: Session = Depends(get_db
 
     return user
 
-# Get all users
+# Get all users, optionally filtering by username (for frontend GET by username)
 @router.get("/", response_model=list[UserRead])
-def get_users(db: Session = Depends(get_db)):
-    users = db.query(User).all()
+def get_users(username: str | None = None, db: Session = Depends(get_db)):
+    if username:
+        users = db.query(User).filter(User.username == username).all()
+    else:
+        users = db.query(User).all()
     return users
