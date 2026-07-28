@@ -36,7 +36,7 @@ class FishEntry(Base):
 
     length_in = Column(
         Float,
-        nullable=False,
+        nullable=True,
     )
 
     weight_lb = Column(
